@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="ValeAppStore.Login">
+	<ContentPage.Content>
+		<StackLayout x:Name="layout" Padding="10,0" VerticalOptions="Center">
+			<Entry x:Name="username" Text="{Binding UserName, Mode=TwoWay}" Placeholder="Username" Keyboard="Default">
+			</Entry>
+			<Entry x:Name="password" Text="{Binding Password, Mode=TwoWay}" Placeholder="Password" Keyboard="Default" IsPassword="true">
+			</Entry>
+			<Button x:Name="loginButton" Text="Login" Command="{Binding LoginCommand}">
+			</Button>
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>
